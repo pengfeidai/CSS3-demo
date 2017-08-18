@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+
+  <style>
+    .normal {
+      margin-bottom: 10px;
+      width: 50px;
+      height: 50px;
+      background-color: #ff0000;
+      border-radius: 50%;
+      -webkit-transition:  all 2s;
+         -moz-transition:  all 2s;
+           -o-transition:  all 2s;
+              transition:  all 2s;
+    }
+    .normal:hover {
+      -webkit-transform:  translateX(150px);
+         -moz-transform:  translateX(150px);
+           -o-transform:  translateX(150px);
+              transform:  translateX(150px);
+    }
+    .custom {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: blue;
+      -webkit-transition:  all 2s cubic-bezier(.94,-0.25,.32,1.31);
+         -moz-transition:  all 2s cubic-bezier(.94,-0.25,.32,1.31);
+           -o-transition:  all 2s cubic-bezier(.94,-0.25,.32,1.31);
+              transition:  all 2s cubic-bezier(.94,-0.25,.32,1.31);
+    }
+    .custom:hover {
+      -webkit-transform:  translateX(300px);
+         -moz-transform:  translateX(300px);
+           -o-transform:  translateX(300px);
+              transform:  translateX(300px);
+    }
+  </style>
+</head>
+<body>
+  <div class="normal"></div>
+  <div class="custom"></div>
+</body>
+</html>
